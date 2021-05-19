@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>开心网注册</title>
+</head>
+<body background=assets/images/bg.jpeg>
+<form action="doreg.php" method="post">
+<table>
+<caption>还没有开心网账号？赶紧注册吧</caption>
+        <tr>
+             <td><label for="email">电子邮件</label></td>
+             <td><input type="email" name="email" id="email" ></td>
+       </tr>
+       <tr>
+             <td><label for="pw">创建密码</label></td>
+             <td><input type="password" name="pw" id="pw" required></td>
+       </tr>  
+       <tr>
+             <td><label for="username">姓名</label></td>
+             <td><input type="text" name="username" id="username" required></td>
+       </tr>
+        <tr>
+             <td><label for="sex">性别</label></td>
+             <td>
+                 <input type="radio" name="sex" id="sex" value="男" checked>男
+                 <input type="radio" name="sex" id="sex" value="女">女
+             </td>
+       </tr>
+       <tr>
+             <td><label for="birthdate">生日</label></td>
+             <td>
+                 <input type="date" name="birthdate" id="birthdate">
+             </td>
+       </tr>
+        <tr>
+             <td><label for="now">我现在</label></td>
+             <td>
+                 <input type="radio" name="now" id="now" value="在工作" >在工作
+                 <input type="radio" name="now" id="now" value="在上学">在上学
+                 <input type="radio" name="now" id="now" value="其他">其他
+             </td>
+       </tr>
+       <tr>
+             <td><label for="dizhi">居住地</label></td>
+             <td><input type="text" name="dizhi" id="dizhi" required></td>
+       </tr>
+
+       <tr>
+	        <td>&nbsp</td>
+		    <td>
+		    <input type="radio" name="agree" id="agree"value="同意">同意
+			<a href="http://www.kaixin001.com/s/reg.html ">开心网服务条款</a>
+            </td>
+		</tr>
+
+		<tr>
+		<td>&nbsp</td>
+		<td> <input type="button" name="立即注册" value="立即注册"></input></td>
+		</tr>
+
+ </body>
+</html>

@@ -5,12 +5,20 @@
 	<title>注册</title>
 </head>
 <body>
-<form action="doreg.php" method="post">
-    <table>
+<header>东软教学系统-注册</header>
+<nav><a href="">首页</a><a href="">视频</a></nav>
+<section>
+       <!-- <form action="doreg.php" method="post"> -->
+       <table>
        <caption>东软教学系统</caption>
        <tr>
              <td><label for="username">用户名</label></td>
              <td><input type="text" name="username" id="username" required></td>
+       </tr>
+
+       <tr>
+             <td>头像</td>
+             <td><input type="file" name="pic"></td>
        </tr>
 
        <tr>
@@ -30,6 +38,14 @@
                  <input type="radio" name="sex" id="sex" value="女">女
              </td>
        </tr>
+
+       <tr>
+             <td><label for="birthdate">生日</label></td>
+             <td>
+                 <input type="date" name="birthdate" id="birthdate">
+             </td>
+       </tr>
+
 
         <tr>
              <td><label for="eb">学历</label></td>
@@ -74,7 +90,19 @@
              </td>
        </tr>
 
-    </table>
+       <tr>
+             <td>
+             <colspan="2">
+             <input type="submit" value="提交">
+             <input type="reset" value="重置">
+             </td>
+       </tr>
 
+    </table>
+</section>
+<aside>这里是侧边栏</aside>
+
+<footer>版权所有 xx 2016-2010</footer>
+    
 </body>
 </html>
