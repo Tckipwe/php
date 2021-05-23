@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>添加视频信息</title>
+</head>
+<body>
+       <form action="doreg.php" method="post">
+   <table>
+       <caption style="text-align:left">请填写视频信息</caption>
+       <tr>
+             <td>视频名称</td>
+             <td><input type="Videoname" name="Videoname" placeholder="Videoname" required/></td>
+       </tr>
+
+        <tr>
+             <td><label for="type">视频类型</label></td>
+             <td>
+                  <select name="type">
+                       <option value="0">电影</option>
+                       <option value="1">电视剧</option>
+                       <option value="2">动画片</option>
+                       <option value="2">原创</option>
+                  </select>
+             </td>
+       </tr>
+
+      <tr>
+             <td>视频海报</td>
+             <td><input type="file" name="pic"></td>
+       </tr>
+
+        <tr>
+             <td><label for="intro">视频简介</label></td>
+             <td>
+                 <textarea name="intro" rows="5"></textarea>
+             </td>
+       </tr>
+
+        <tr>
+             <td><label for="url">下载地址</label></td>
+             <td><input type="url" name="url" id="url" ></td>
+       </tr>
+
+       <tr>
+             <td>
+
+             <colspan="2">
+             <input type="submit" value="添加">
+             <input type="reset" value="重置">
+             </td>
+       </tr>
+
+    </table>
+    </form>
+    
+</body>
+</html>
