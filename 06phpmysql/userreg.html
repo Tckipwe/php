@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>文档标题-薛烜</title>
+</head>
+<body>
+	<form action="douserreg.php" method="post">
+	<table width="80%">
+		<caption>用户注册</caption>
+	   <tr>
+	    <td width="80px" align="right"><label for="uname">用户名：</label></td>
+		<td><input type="text" name="uname" id="uname" size="80" required>		</td>
+		</tr>
+		<tr>
+		  <td align="right"><label for="password">密码：</label></td>
+		  <td><input type="password" name="password" id="password" size="80" required></td>
+		</tr>
+		
+
+		<tr>
+			<td align="right"><label for="gender">性别</label></td>
+			<td>
+				<input type="radio" name="gender" value="1" id="sex" checked>男
+				<input type="radio" name="gender" value="0" id="sex">女
+			</td>
+		</tr>
+		
+
+		 <tr>
+             <td align="right"><label for="birthdate">生日</label></td>
+             <td>
+                 <input type="date" name="birthdate" id="birthdate">
+             </td>
+       </tr>
+
+
+		<tr>
+			<td align="right"><label for="hobby">hobby</label></td>
+			<td>
+				<input type="checkbox" name="hobby[]" value="Swimming" id="hobby" checked>Swimming
+				<input type="checkbox" name="hobby[]" value="Singing">Singing
+				<input type="checkbox" name="hobby[]" value="Dancing">Dancing
+				<input type="checkbox" name="hobby[]" value="Reading">Reading
+			</td>
+		</tr>
+
+         <tr>
+             <td align="right"><label for="degree">学历</label></td>
+             <td>
+                  <select name="degree">
+                       <option value="">==请选择==</option>
+                       <option value="0">大专</option>
+                       <option value="1">本科</option>
+                       <option value="2">研究生</option>
+                  </select>
+             </td>
+       </tr>
+
+        <tr>
+             <td align="right"><label for="intro">自我介绍</label></td>
+             <td>
+                 <textarea name="intro" rows="5"></textarea>
+             </td>
+       </tr>
+
+
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" value="submit">
+				<input type="reset" value="reset">
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

@@ -17,15 +17,23 @@ $conn = @mysql_connect('localhost','root','')//连接数据库
         //var_dump($users);
         echo '<table border="1">';
         echo '<caption>用户管理</caption>';
-        echo '<tr><th>序号</th><th>用户名</th><th>性别</th><th>爱好</th></tr>';
+        echo '<tr><th>序号</th><th>用户名</th><th>密码</th><th>性别</th><th>生日</th><th>爱好</th><th>学历</th><th>自我介绍</th></tr>';
          foreach ($arrs as $index=>$one) {
         	echo '<tr>';
         	echo '<td>'.($index+1).'</td>';
         	echo '<td>'.$one['uname'].'</td>';
+            echo '<td>'.$one['password'].'</td>';
         	if($one['gender']==1){$sex='男';}
             else{$sex='女';}
         	echo '<td>'.$sex.'</td>';
+            echo '<td>'.$one['birthdate'].'</td>';
         	echo '<td>'.$one['hobby'].'</td>';
+            if($one['degree']==1){$degree='本科';}
+            if($one['degree']==2){$degree='研究生';}
+            else{$degree='大专';}
+            echo '<td>'.$degree.'</td>';
+            echo '<td>'.$one['intro'].'</td>';
+
         	echo '</tr>';
         }
 
