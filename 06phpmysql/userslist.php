@@ -56,4 +56,5 @@ $conn = @mysql_connect('localhost','root','')//连接数据库
 
 
 
+
  ?>

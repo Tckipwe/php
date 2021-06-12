@@ -36,4 +36,5 @@ function add($tbl,$data){
 	}
 
 }
+
 ?>
